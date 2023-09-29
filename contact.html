@@ -56,6 +56,9 @@
       footer img{
         width: 3rem;
       }
+      ul{
+        list-style-type: none;
+      }
     </style>
   </head>
   <body>
@@ -68,16 +71,30 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <img src="assets/main.png" alt="me">
-    <p>
-      Hi there, I'm Owen Pete. Welcome to my photography portfolio.
-      Here you will find a collection of images that I have taken over the last 3 years, along with information regarding my work. Feel free to browse, I hope you enjoy!
-    </p>
-    <h3>My Mission</h3>
-    <p>Through the form of nature photography I hope to inspire people to take care of their environment.
-      The natural beauty of our planet is something we all take for granted.
-      It is my mission to show the world what we are losing if pollution persists, and insist on changing our ways.
-    </p>
+    <h1>Contact</h1>
+    <form action="/server-page-handling-form-data" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="your name...">
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="your email...">
+            </li>
+            <li>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" placeholder="subject...">
+            </li>
+            <li>
+                <label for="message">Message:</label>
+                <textarea id="message" rows="5"></textarea>
+            </li>
+            <li>
+                <button type="submit">Submit</button>
+            </li>
+        </ul>
+    </form>
     <footer>
       <table>
         <img src="assets/OPt.png" alt="logo">
